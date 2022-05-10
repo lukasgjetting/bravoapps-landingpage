@@ -5,3 +5,27 @@
 .container {
     @apply mx-auto w-full max-w-screen-xl px-4;
 }
+
+
+.cta-button-base {
+    @apply
+        bg-[#217242]
+        shadow-lg
+        text-white
+        font-semibold
+        rounded-md
+        hover:bg-[#227f47]
+        hover:shadow-xl
+        transition-all
+        bg-gradient-to-r
+        from-green-700
+        to-green-500;
+}
+
+.cta-button {
+    @apply cta-button-base px-16 py-4 text-lg;
+}
+
+.cta-button-small {
+    @apply cta-button-base px-4 py-1;
+}
