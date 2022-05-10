@@ -39,7 +39,7 @@
 }
 
 .cta-button {
-    @apply cta-button-base px-16 py-4 text-lg;
+    @apply px-16 py-4 xl:text-lg cta-button-base;
 }
 
 .cta-button-small {
