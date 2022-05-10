@@ -3,8 +3,9 @@
     <head>
         <link rel="stylesheet" type="text/css" href="./style.css" />
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;600&display=swap" rel="stylesheet">
-        
         <title>BravoApps - Unlimited app development on a fixed price subscription</title>
+
+        <link rel="icon" type="image/png" href="./favicon.ico"/>
     </head>
     <body>
         <svg width="0" height="0">
@@ -18,23 +19,27 @@
           </defs>
         </svg>
         <div>
-            <header class="container flex justify-between items-center py-3 font-['Poppins'] pb-16">
-                <div>
-                    <a href="/" class="font-[GeometrySoftPro] text-green-800 text-3xl">
-                        BravoApps
-                    </a>
+            <header id="header">
+                <div class="container flex justify-between items-center py-3 font-['Poppins']">
+                    <div>
+                        <a href="/" class="font-[GeometrySoftPro] text-green-800 text-3xl">
+                            BravoApps
+                        </a>
+                    </div>
+                    <nav class="flex">
+                        <ul class="flex">
+                            <li><a class="px-4 py-4" href="#home">Home</a></li>
+                            <li><a class="px-4 py-4" href="#how-it-works">How It Works</a></li>
+                            <li><a class="px-4 py-4" href="#pricing">Pricing</a></li>
+                            <li><a class="px-4 py-4" href="#faq">FAQ</a></li>
+                            <li><a class="px-4 py-4" href="#contact">Contact</a></li>
+                            <li class="ml-4"><a class="cta-button-small" target="_blank" href="https://calendly.com/bravoapps/intro">Book a Call</a></li>
+                        </ul>
+                    </nav>
                 </div>
-                <nav class="flex">
-                    <ul class="flex">
-                        <li><a class="px-4 py-4" href="/">Home</a></li>
-                        <li><a class="px-4 py-4" href="/">Projects</a></li>
-                        <li><a class="px-4 py-4" href="/">Contact</a></li>
-                        <li class="ml-4"><a class="cta-button-small" target="_blank" href="https://calendly.com/bravoapps/intro">Book a Call</a></li>
-                    </ul>
-                </nav>
             </header>
             <main>
-                <div class="container">
+                <div id="home" class="container pt-32">
                     <div class="mt-12 flex items-center justify-around">
                         <div>
                             <h1 class="mb-3 font-semibold text-5xl tracking-tight text-[#0d4423]">Unlimited app development work</h1>
@@ -44,10 +49,16 @@
                             <a class="cta-button" target="_blank" href="https://calendly.com/bravoapps/intro">Book a Call</a>
                         </div>
                     </div>
+                    <div class="mt-24 -mb-16 flex justify-center">
+                        <a class="flex flex-col items-center text-xl text-gray-800" href="#testimonial">
+                            Read more
+                            <img class="w-8" src="./assets/images/icon-chevron-down.svg" />
+                        </a>
+                    </div>
                 </div>
                 <div class="bg-[#217242] h-[32rem]" style="clip-path: url(#curve-one);">
                 </div>
-                <div class="bg-[#0d4423] h-[32rem] -mt-40" style="clip-path: url(#curve-two);">
+                <div id="testimonial" class="scroll-m-16 bg-[#0d4423] h-[32rem] -mt-40" style="clip-path: url(#curve-two);">
                     <div class="container h-full flex items-center">
                         <div class="p-4 border border-white border-opacity-50 rounded-md flex items-center">
                             <div class="flex flex-col items-center pr-12">
@@ -67,7 +78,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="container pt-12">
+                <div id="how-it-works" class="container pt-12">
                     <div class="text-center text-4xl font-light leading-relaxed">
                         With BravoApps you won't have to deal with
                         <br />
@@ -124,7 +135,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="container">
+                <div id="pricing" class="container">
                     <h1 class="text-3xl text-center text-[#125C2F] mt-16 mb-8">Pricing</h1>
                     <div class="flex items-center px-24">
                         <div class="w-1/3 px-8">
@@ -133,10 +144,10 @@
                                 <span class="text-xl font-bold">Maintenance</span>
                                 <div class="bg-[#217242] opacity-75 mx-12 h-1 mb-4 mt-1"></div>
                                 <ul>
-                                    <li>Dependencies are kept up-to-date</li>
-                                    <li>Bugs are fixed</li>
-                                    <li class="line-through">Small features are added</li>
-                                    <li class="line-through">Changes are made</li>
+                                    <li class="py-1">Dependencies are kept up-to-date</li>
+                                    <li class="bg-slate-100 py-1">Bugs are fixed</li>
+                                    <li class="py-1 line-through text-gray-400">Small features are added</li>
+                                    <li class="py-1 line-through text-gray-400 bg-slate-100">Changes are made</li>
                                 </ul>
                                 <span class="block font-bold py-4 text-3xl text-[#125C2F]">$450 / month</span>
                                 <div class="mt-8 mb-4">
@@ -151,10 +162,10 @@
                                 <span class="text-xl font-bold">All-Inclusive</span>
                                 <div class="bg-[#217242] opacity-75 mx-12 h-1 mb-4 mt-1"></div>
                                 <ul>
-                                    <li>Dependencies are kept up-to-date</li>
-                                    <li>Bugs are fixed</li>
-                                    <li>Small features are added</li>
-                                    <li>Changes are made</li>
+                                    <li class="py-1">Dependencies are kept up-to-date</li>
+                                    <li class="bg-slate-100 py-1">Bugs are fixed</li>
+                                    <li class="py-1">Small features are added</li>
+                                    <li class="bg-slate-100 py-1">Changes are made</li>
                                 </ul>
                                 <div class="inline relative">
                                     <span class="block font-bold my-4 text-3xl text-[#125C2F]">$900 / month</span>
@@ -172,10 +183,10 @@
                                 <span class="text-xl font-bold">Development</span>
                                 <div class="bg-[#217242] opacity-75 mx-12 h-1 mb-4 mt-1"></div>
                                 <ul>
-                                    <li class="line-through">Dependencies are kept up-to-date</li>
-                                    <li class="line-through">Bugs are fixed</li>
-                                    <li>Small features are added</li>
-                                    <li>Changes are made</li>
+                                    <li class="py-1 line-through text-gray-400">Dependencies are kept up-to-date</li>
+                                    <li class="bg-slate-100 py-1 line-through text-gray-400">Bugs are fixed</li>
+                                    <li class="py-1">Small features are added</li>
+                                    <li class="bg-slate-100 py-1">Changes are made</li>
                                 </ul>
                                 <span class="block font-bold py-4 text-3xl text-[#125C2F]">$600 / month</span>
                                 <div class="mt-8 mb-4">
@@ -185,6 +196,8 @@
                             </div>
                         </div>
                     </div>
+                </div>
+                <div id="faq" class="container">
                     <h1 class="text-3xl text-center text-[#125C2F] mt-24 mb-8">FAQ</h1>
                 </div>
                 <div class="max-w-3xl mx-auto w-full">
@@ -213,11 +226,11 @@
                     <div class="flex mt-4 -mx-4 text-center">
                         <div class="w-1/2 px-2 relative">
                             <img class="w-1/4 absolute top-2 right-4 z-0 opacity-25" src="./assets/images/icon-circle-check.svg" />
-                            <div class="border px-4 py-2 relative">
+                            <div class="border py-2 relative">
                                 <div class="text-center text-lg font-bold">Small features</div>
                                 <div class="bg-[#217242] opacity-75 mx-12 h-1 mb-4 mt-1"></div>
                                 <ul>
-                                    <li class="px-2 py-1">Allow users to edit their tweets after writing them.</li>
+                                    <li class="px-2 py-1">Allow users to edit their tweets after writing and submitting them.</li>
                                     <li class="px-2 py-1 bg-slate-100">When a user has used the app 4 times, ask them to rate it.</li>
                                     <li class="px-2 py-1">Show the number of friends a user has, on their profile.</li>
                                 </ul>
@@ -242,7 +255,7 @@
                         This also means that a big feature can be implemented in parallel with the rest of the maintenance work.
                     </p>
                 </div>
-                <div class="container text-center">
+                <div id="contact" class="container text-center">
                     <h1 class="text-3xl text-center text-[#125C2F] mt-16 mb-4">Contact</h1>
                     <p>To get in touch please book a call with our founder, Lukas, using the button below.</p>
                     <p class="mt-1">
@@ -265,5 +278,6 @@
                 </div>
             </footer>
         </div>
+        <script src="./script.js"></script>
     </body>
 </html>
