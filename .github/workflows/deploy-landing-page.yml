@@ -22,11 +22,9 @@ jobs:
 
       - name: 📦 Install packages
         run: yarn install
-        working-directory: landingpage
 
       - name: 👷‍♂️ Build and bundle
         run: yarn build
-        working-directory: landingpage
 
       - name: 📂 Upload files
         uses: jakejarvis/s3-sync-action@master
