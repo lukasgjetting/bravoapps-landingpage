@@ -7,7 +7,11 @@
     src: url("./assets/fonts/GeometrySoftPro.otf") format("opentype");
 }
 
-.header-sticky {
+.with-sticky-header {
+    padding-top: 60px;
+}
+
+.with-sticky-header header {
     @apply
         fixed
         top-0

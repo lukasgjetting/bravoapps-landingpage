@@ -31,7 +31,8 @@
           </defs>
         </svg>
         <div>
-            <header id="header">
+            <!--<img class="w-full absolute top-0 z-0" src="./assets/images/office.png" />-->
+            <header id="header" class="relative">
                 <div class="container flex justify-between items-center py-3 font-['Poppins']">
                     <div>
                         <a href="/" class="font-[GeometrySoftPro] text-green-800 text-3xl">
@@ -51,7 +52,7 @@
                 </div>
             </header>
             <main>
-                <div id="home" class="text-center sm:text-left container pt-12 sm:pt-32">
+                <div id="home" class="relative text-center sm:text-left container pt-12 sm:pt-32">
                     <div class="mt-12 flex lg:flex-row flex-col items-center justify-between">
                         <div>
                             <h1 class="mb-3 font-semibold text-5xl tracking-tight text-[#0d4423]">Unlimited app development work</h1>
@@ -61,7 +62,7 @@
                             <a class="cta-button" target="_blank" href="https://calendly.com/bravoapps/intro">Book a Call</a>
                         </div>
                     </div>
-                    <div class="mt-24 -mb-16 flex justify-center">
+                    <div class="mt-32 -mb-24 flex justify-center">
                         <a class="flex flex-col items-center text-xl text-gray-800" href="#testimonial">
                             Read more
                             <img class="w-8" src="./assets/images/icon-chevron-down.svg" />
@@ -134,6 +135,11 @@
                         </div>
                     </div>
                     <img class="w-64 -mt-64 hidden md:inline" src="assets/images/blob-1.png" />
+                </div>
+                <div class="container">
+                    <h1 class="text-3xl text-center text-[#125C2F] mt-24 mb-4">Who will you be working with?</h1>
+                </div>
+                <div class="container">
                     <h1 class="text-3xl text-center text-[#125C2F] mt-24 mb-4">So how does it all work?</h1>
                 </div>
                 <div class="bg-[#0d4423] py-12 text-white text-xl">
@@ -154,29 +160,9 @@
                 <div id="pricing" class="container">
                     <h1 class="text-3xl text-center text-[#125C2F] mt-16 mb-8">Pricing</h1>
                     <div class="flex flex-wrap items-center md:px-24 lg:px-8 xl:px-24">
-                        <div class="lg:w-1/3 w-full px-8">
+                        <div class="lg:w-1/2 mx-auto w-full px-4">
                             <div class="text-center shadow-lg hover:shadow-2xl transition-all w-full">
-                                <div class="hidden lg:block h-32"><img src="./assets/images/pricing-2-top.svg" /></div>
-                                <div class="lg:hidden h-8 w-full bg-[#4A9868] mb-8"></div>
-                                <span class="text-xl font-bold">Maintenance</span>
-                                <div class="bg-[#217242] opacity-75 mx-12 h-1 mb-4 mt-1"></div>
-                                <ul>
-                                    <li class="py-1">Dependencies are kept up-to-date</li>
-                                    <li class="bg-slate-100 py-1">Bugs are fixed</li>
-                                    <li class="py-1 line-through text-gray-400">Small features are added</li>
-                                    <li class="py-1 line-through text-gray-400 bg-slate-100">Changes are made</li>
-                                </ul>
-                                <span class="block font-bold py-4 text-2xl text-[#125C2F]">$325 / month</span>
-                                <div class="mt-8 mb-4">
-                                    <a class="cta-button" target="_blank" href="https://calendly.com/bravoapps/intro">Book a Call</a>
-                                </div>
-                                <div class="lg:hidden h-8 w-full bg-[#4A9868] mt-8"></div>
-                                <div class="hidden lg:flex items-end h-32"><img src="./assets/images/pricing-2-bottom.svg" /></div>
-                            </div>
-                        </div>
-                        <div class="lg:w-1/3 w-full px-4">
-                            <div class="text-center shadow-lg hover:shadow-2xl transition-all w-full">
-                                <div class="hidden lg:block h-40"><img src="./assets/images/pricing-1-top.svg" /></div>
+                                <div class="hidden lg:block h-32"><img src="./assets/images/pricing-1-top-svg.svg" /></div>
                                 <div class="lg:hidden h-8 w-full bg-[#125C2F] mb-8"></div>
                                 <span class="text-xl font-bold">All-Inclusive</span>
                                 <div class="bg-[#217242] opacity-75 mx-12 h-1 mb-4 mt-1"></div>
@@ -187,38 +173,17 @@
                                     <li class="bg-slate-100 py-1">Changes are made</li>
                                 </ul>
                                 <div class="inline-block relative">
-                                    <span class="font-bold text-3xl text-[#125C2F]">$580 / month</span>
-                                    <span class="absolute -bottom-3 -right-12 bg-green-50 border border-green-700 text-green-900 rounded-full px-2 -rotate-12">$160 off</span>
+                                    <span class="font-bold text-3xl text-[#125C2F]">€560 / month</span>
                                 </div>
                                 <div class="mt-12 mb-4">
                                     <a class="cta-button" target="_blank" href="https://calendly.com/bravoapps/intro">Book a Call</a>
                                 </div>
                                 <div class="lg:hidden h-8 w-full bg-[#125C2F] mt-8"></div>
-                                <div class="hidden lg:flex h-40 items-end"><img src="./assets/images/pricing-1-bottom.svg" /></div>
-                            </div>
-                        </div>
-                        <div class="lg:w-1/3 w-full px-8">
-                            <div class="text-center shadow-lg hover:shadow-2xl transition-all w-full">
-                                <div class="hidden lg:block h-32"><img src="./assets/images/pricing-3-top.svg" /></div>
-                                <div class="lg:hidden h-8 w-full bg-[#9ECCB0] mb-8"></div>
-                                <span class="text-xl font-bold">Development</span>
-                                <div class="bg-[#217242] opacity-75 mx-12 h-1 mb-4 mt-1"></div>
-                                <ul>
-                                    <li class="py-1 line-through text-gray-400">Dependencies are kept up-to-date</li>
-                                    <li class="bg-slate-100 py-1 line-through text-gray-400">Bugs are fixed</li>
-                                    <li class="py-1">Small features are added</li>
-                                    <li class="bg-slate-100 py-1">Changes are made</li>
-                                </ul>
-                                <span class="block font-bold py-4 text-2xl text-[#125C2F]">$415 / month</span>
-                                <div class="mt-8 mb-4">
-                                    <a class="cta-button" target="_blank" href="https://calendly.com/bravoapps/intro">Book a Call</a>
-                                </div>
-                                <div class="lg:hidden h-8 w-full bg-[#9ECCB0] mt-8"></div>
-                                <div class="hidden lg:flex h-32 items-end"><img src="./assets/images/pricing-3-bottom.svg" /></div>
+                                <div class="hidden lg:flex h-32 items-end"><img src="./assets/images/pricing-1-bottom-svg.svg" /></div>
                             </div>
                         </div>
                     </div>
-                    <div class="text-center mt-4">All prices are per month, per app.</div>
+                    <div class="text-center mt-4">Prices are per month, per app.</div>
                 </div>
                 <div id="faq" class="container">
                     <h1 class="text-3xl text-center text-[#125C2F] mt-24 mb-8">FAQ</h1>
@@ -295,7 +260,7 @@
             <footer class="mt-16 bg-[#0d4423] text-white">
                 <div class="container p-16 flex">
                     <div class="w-full flex flex-col text-center">
-                        <span>BravoApps is run by <a class="underline" href="https://twitter.com/lukasgjetting">@lukasgjetting</a></span>
+                        <span>Made in 🇩🇰 Copenhagen by <a class="underline" href="https://twitter.com/lukasgjetting">@lukasgjetting</a></span>
                         <br />
                         <span>CVR 41864966</span>
                     </div>

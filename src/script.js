@@ -1,3 +1,9 @@
+if (module.hot) {
+    module.hot.accept(() => {
+        location.reload()
+    });
+}
+
 // Enable smooth scroll when clicking ID links
 document.querySelectorAll('a[href^=\\#]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
@@ -15,13 +21,12 @@ document.querySelectorAll('a[href^=\\#]').forEach(anchor => {
 
 
 // Make menu sticky
-const header = document.querySelector('#header');
-
 const handleOnScroll = () => {
-    if (window.scrollY >= header.offsetTop) {
-        header.classList.add('header-sticky');
+    console.log(window.scrollY);
+    if (window.scrollY >= 60) {
+        document.body.classList.add('with-sticky-header');
     } else {
-        header.classList.remove('header-sticky');
+        document.body.classList.remove('with-sticky-header');
     }
 };
 
