@@ -84,7 +84,16 @@
                     <div class="container h-full flex items-center">
                         <div class="p-4 border relative border-white border-opacity-50 rounded-md flex sm:flex-row flex-col-reverse items-center">
                             <div class="flex flex-row sm:flex-col items-center sm:pr-12">
-                                <img class="mr-8 sm:mr-0 sm:block shadow sm:-mt-40 rounded-full w-24 sm:w-40 border-4 border-[#217242] mb-2" src="assets/images/maria.jpeg">
+                                <div class="overflow-hidden mr-8 sm:mr-0 sm:block shadow sm:-mt-40 rounded-full w-24 sm:w-40 border-4 border-[#217242] mb-2">
+                                    <picture>  
+                                        <source srcset="assets/images/maria.webp" type="image/webp">
+                                        <source srcset="assets/images/maria.jpg" type="image/jpeg">
+                                        <img
+                                        src="assets/images/maria.jpg"
+                                        alt="Maria Clemmensen"
+                                        >
+                                    </picture>
+                                </div>
                                 <div class="flex flex-col items-center">
                                     <span class="text-white font-bold text-xl">Maria Clemmensen</span>
                                     <span class="my-2 w-16 h-0.5 opacity-50 bg-[#217242] rounded-full"></span>
@@ -149,8 +158,17 @@
                     <h1 class="text-3xl text-center text-[#125C2F] mt-24 mb-4">You will be working with</h1>
                     <div class="flex flex-col lg:flex-row lg:justify-around">
                         <div class="flex justify-center items-center pb-8 lg:pb-0 w-full lg:w-1/2">
-                            <img class="rounded-full w-48" src="./assets/images/lukas.png" />
-                            <div class="flex flex-col pl-8">
+                            <div class="rounded-full w-48 overflow-hidden">
+                                <picture>
+                                    <source srcset="assets/images/lukas.webp" type="image/webp">
+                                    <source srcset="assets/images/lukas.jpg" type="image/jpeg">
+                                    <img
+                                        src="assets/images/lukas.jpg"
+                                        alt="Lukas Gjetting"
+                                    >
+                                </picture>
+                            </div>
+                            <div class="flex-1 flex flex-col pl-8">
                                 <span class="text-3xl font-bold">Lukas Gjetting</span>
                                 <span class="text-xl pb-2">Senior App Developer</span>
                                 <span class="font-light">
@@ -159,8 +177,17 @@
                             </div>
                         </div>
                         <div class="flex justify-center items-center w-full lg:w-1/2">
-                            <img class="rounded-full w-48" src="./assets/images/emma.png" />
-                            <div class="flex flex-col pl-8">
+                            <div class="rounded-full w-48 overflow-hidden">
+                                <picture>
+                                    <source srcset="assets/images/emma.webp" type="image/webp">
+                                    <source srcset="assets/images/emma.jpg" type="image/jpeg">
+                                    <img
+                                        src="assets/images/emma.jpg"
+                                        alt="Lukas Gjetting"
+                                    >
+                                </picture>
+                            </div>
+                            <div class="flex-1 flex flex-col pl-8">
                                 <span class="text-3xl font-bold">Emma Edvardsen</span>
                                 <span class="text-xl pb-2">UI / UX Designer</span>
                                 <span class="font-light">
