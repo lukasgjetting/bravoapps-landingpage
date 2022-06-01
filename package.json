@@ -1,12 +1,11 @@
 {
   "name": "bravoapps-landingpage",
   "version": "1.0.0",
-  "source": "./src/index.html",
   "repository": "https://github.com/lukasgjetting/bravoapps-landingpage.git",
   "author": "Lukas Gjetting <lukasgjetting@gmail.com>",
   "private": true,
   "scripts": {
-    "dev": "parcel --no-cache",
+    "dev": "parcel ./src/**/*.html --no-cache",
     "build": "parcel build"
   },
   "devDependencies": {
