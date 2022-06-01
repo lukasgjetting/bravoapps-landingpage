@@ -6,7 +6,7 @@
   "private": true,
   "scripts": {
     "dev": "parcel ./src/**/*.html --no-cache",
-    "build": "parcel build ./src/**/*.html"
+    "build": "parcel build ./src/index.html ./src/da/index.html"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.7",
